@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" 
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    </head>
+    <title>Seller's Page</title>
+    <body>
+        <header id="main-header" class="bg-warning p-4 mb-3">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 align-self-center">
+                        <h1 id="header-title" style="color: black;">Seller's Page</h1>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <div class="container">
+            <div id="main" class="card card-body bg-warning-subtle">
+            <h2 class="title" style="margin:1rem;">Add Products</h2>
+
+            <form id="addForm" class="form-inline mb-3">
+                <div class="input-group">
+                    <div class="input-group-text">Rs.</div>
+                    <input type="number" class="form-control" id="money" placeholder="Cost of Product">
+                    <div class="input-group-text">Product</div>
+                    <input type="text" class="form-control" id="product" placeholder="Product Name">
+                    <input type="button" class="btn btn-warning" value="Submit" id="btn">
+                </div>
+            </form>
+            <div class="card" style="margin:2rem;">
+                <div class="card-header">
+                  <h3>Products Added</h3>
+                </div>
+                <ul class="list-group list-group-flush" id="products"></ul>
+            </div>
+            <div class="input">
+                <h4 id="input"></h4>
+            </div>
+            </div>
+        </div>
+        <script src="products.js"></script>
+    </body>
+</html>
